@@ -1,0 +1,294 @@
+:root {
+  --color-de-fondo: #ffe4e1;
+  --color-de-fondo-menu: #ffd700;
+  --color-de-link: #000000;
+  --color-secundario: ivory;
+  --color-tercero: olive;
+  --color-cuarto: beige;
+}
+
+body {
+  background-color: var(--color-de-fondo);
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  line-height: 1.6;
+  background-image: url(./assets/yellow-flowers-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  backdrop-filter: blur(7px);
+}
+
+/*----------------------------- HEADER ----------------------*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.6rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: solid rgb(0, 255, 213) 2px;
+}
+
+.name_dev_area {
+  border: #1b365c solid 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header__title {
+  font-size: 5rem;
+  text-align: center;
+  border: blue dashed 3px;
+  align-self: flex-start;
+}
+
+.header__subtitle {
+  border: 3px dashed red;
+  color: #471901;
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+.navegation {
+  border: 1px red dashed;
+  display: flex;
+}
+
+.navegation__list {
+  border: #d356ec 1px solid;
+  gap: 15px;
+  display: flex;
+}
+
+.navegation__element {
+  border: 2px solid blue;
+}
+a {
+  border: #522a1e dashed 3px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: #522a1e;
+  text-decoration: underline overline orange;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #9c5306;
+}
+
+/*------------------------- PRESENTATION ---------------------*/
+.presentation__section {
+  border: rgb(110, 9, 234) solid 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 0.4rem;
+}
+
+.presentation {
+  border: #000000 solid 2px;
+}
+
+.presentation__foto {
+  width: 30%;
+  border-radius: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 4rem;
+  border: solid palegreen 2px;
+}
+
+.presentation__contenedor {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  padding: 0 1rem 0 1rem;
+  margin-left: 2.5rem;
+  border: solid red 2px;
+}
+
+.presentation__subtitulo {
+  border: 2px solid orange;
+  color: rgb(143, 58, 9);
+  font-style: italic;
+}
+
+#presentation__txt {
+  border: blue 2px solid;
+  margin: 0 5rem 0 1.5rem;
+}
+
+.redes {
+  display: flex;
+  flex-flow: wrap row;
+  align-items: space-around;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 1rem;
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+  gap: 76px;
+  border: solid rgb(43, 255, 0) 2px;
+}
+
+.redes__img {
+  background-size: 16px;
+  border: solid red 2px;
+  justify-items: space-around;
+}
+
+/*ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-de-link);
+  
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+
+/* --------- Sección Presentación -----------*/
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.skills-section {
+  border: solid 2px lightskyblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-element-box {
+  border: solid 2px red;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: reverse;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/*------------------------------ Pantallas pequeñas ---------------->
+@media (max-width: 80px) {
+  .presentacion__foto {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/*-------------------- Tablets y pantallas más grandes -------------->
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*.header__logo {
+    max-width: 100px;
+    border: red 15px;
+  }
+
+  .header__titulo {
+    font-size: 1.5rem;
+    border: red 10px;
+  }
+
+  .navegacion__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .navegacion__elemento a {
+    font-size: 1rem;
+  }
+}
+
+/*------------------------ Pantallas grandes ------------------>
+
+@media (min-width: 1024px) {
+  /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+/*.header__titulo {
+    font-size: 1.8rem;
+    border: red 15px;
+  }
+
+  .navegacion__elemento a {
+    font-size: 1.1rem;
+  }
+}
+
+input,
+textarea {
+  border: solid red 2px;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 15px;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: medium;
+  color: red;
+  transition: width;
+}
+
+button:hover {
+  background-color: red;
+  color: #ffff;
+  width: 200px;
+}
+
+/*------------------  FOOTER  -----------------*/
+.footer {
+  background-color: #1b365c;
+  color: #92bae2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.footerTxt {
+  align-self: stretch;
+}
