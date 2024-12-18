@@ -1,15 +1,22 @@
 :root {
   --color-de-fondo: #ffe4e1;
   --color-de-fondo-menu: #ffd700;
-  --color-de-link: #000000;
-  --color-secundario: ivory;
+  --color-de-link: #003e3d;
+  --color-secundario: #573a0b;
   --color-tercero: olive;
   --color-cuarto: beige;
+  --letra-Neucha: "Neucha", cursive;
+  --letra-Macondo: "Macondo", cursive;
+  --letra-Eagle_lake: "Eagle Lake", serif;
+  --letra-Almendra: "Almendra Display", serif;
+  --letra-Prompt-inputs: "Prompt", serif;
+  --letra-Playwrite: "Playwrite GB S", serif;
+  --letra-Nova: "Nova Round", serif;
+  --letra-Raleway-principal: "Raleway", sans-serif;
 }
 
 body {
-  background-color: var(--color-de-fondo);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--letra-Raleway-principal);
   margin: 0;
   box-sizing: border-box;
   padding: 10px;
@@ -31,11 +38,9 @@ body {
   padding: 0.6rem;
   width: 100%;
   box-sizing: border-box;
-  border: solid rgb(0, 255, 213) 2px;
 }
 
 .name_dev_area {
-  border: #1b365c solid 2px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -43,35 +48,31 @@ body {
 }
 
 .header__title {
-  font-size: 5rem;
+  font-family: var(--letra-Playwrite);
+  font-size: 4rem;
   text-align: center;
-  border: blue dashed 3px;
   align-self: flex-start;
+  margin: 0;
 }
 
 .header__subtitle {
-  border: 3px dashed red;
   color: #471901;
-  align-self: flex-start;
+  font-family: var(--letra-Neucha);
+  align-self: flex-end;
   margin-top: 0;
 }
 
 .navegation {
-  border: 1px red dashed;
   display: flex;
 }
 
 .navegation__list {
-  border: #d356ec 1px solid;
   gap: 15px;
   display: flex;
 }
 
 .navegation__element {
-  border: 2px solid blue;
-}
-a {
-  border: #522a1e dashed 3px;
+  font-family: var(--letra-Prompt-inputs);
 }
 
 ul {
@@ -84,36 +85,31 @@ li {
 }
 
 a {
-  color: #522a1e;
+  color: var(--color-de-link);
   text-decoration: underline overline orange;
-  transition: color 0.5s;
+  transition: color 0.3s;
 }
 
 a:hover {
-  color: #9c5306;
+  color: var(--color-secundario);
 }
 
 /*------------------------- PRESENTATION ---------------------*/
 .presentation__section {
   border: rgb(110, 9, 234) solid 5px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  align-content: center;
-  justify-content: center;
   padding: 0.4rem;
+  gap: 10px;
 }
 
 .presentation {
-  border: #000000 solid 2px;
+  border: #000000 dashed 2px;
 }
 
 .presentation__foto {
   width: 30%;
-  border-radius: 58px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  align-self: flex-start;
   margin-top: 0;
   margin-bottom: 1.5rem;
   margin-left: 2rem;
@@ -121,23 +117,17 @@ a:hover {
   border: solid palegreen 2px;
 }
 
-.presentation__contenedor {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-end;
-  padding: 0 1rem 0 1rem;
-  margin-left: 2.5rem;
-  border: solid red 2px;
-}
-
 .presentation__subtitulo {
   border: 2px solid orange;
-  color: rgb(143, 58, 9);
+  color: rgb(97, 39, 5);
   font-style: italic;
+  font-family: var(--letra-Eagle_lake);
+  font-weight: 400;
+  font-size: medium;
+  justify-self: center;
 }
 
 #presentation__txt {
-  border: blue 2px solid;
   margin: 0 5rem 0 1.5rem;
 }
 
@@ -145,31 +135,99 @@ a:hover {
   display: flex;
   flex-flow: wrap row;
   align-items: space-around;
+  justify-self: center;
   padding-left: 3rem;
   padding-right: 3rem;
   margin-top: 1rem;
   margin-left: 5.5rem;
   margin-right: 5.5rem;
   gap: 76px;
-  border: solid rgb(43, 255, 0) 2px;
 }
 
 .redes__img {
   background-size: 16px;
-  border: solid red 2px;
   justify-items: space-around;
 }
 
-/*ol,
-ul,
-li {
-  list-style: none;
+.__titulo {
+  justify-self: center;
+  font-family: var(--letra-Prompt-inputs);
 }
 
-a {
-  text-decoration: none;
-  color: var(--color-de-link);
-  
+.skills-section {
+  border: solid 2px rgb(67, 84, 214);
+}
+
+.skill-element-box {
+  border: solid 2px red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills-list {
+  border: dashed purple 2px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hobbies-list {
+  border: dashed red 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hobbies__icono {
+  display: flex;
+  justify-self: center;
+}
+
+form {
+  border: red solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 7rem;
+}
+
+input [type="text"] {
+  border: dashed blue 2px;
+  background-color: #1b365c;
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+  font-family: var(--letra-Prompt-inputs);
+}
+
+button {
+  border-radius: 30px;
+  color: #ffff;
+  background-color: #683600;
+  width: 20rem;
+}
+
+button:hover {
+  background-color: #9c5306;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #1b365c;
+  color: #92bae2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.footerTxt {
+  align-self: stretch;
 }
 
 /* ------------------------------ Sección Menú -------------------------------*/
@@ -179,21 +237,6 @@ a {
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
-
-.skills-section {
-  border: solid 2px lightskyblue;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skill-element-box {
-  border: solid 2px red;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: reverse;
-  gap: 4px;
-  align-items: flex-end;
-}
 
 /*------------------------------ Sección de Aficiones --------------------------------*/
 
@@ -280,15 +323,3 @@ button:hover {
 }
 
 /*------------------  FOOTER  -----------------*/
-.footer {
-  background-color: #1b365c;
-  color: #92bae2;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-around;
-}
-
-.footerTxt {
-  align-self: stretch;
-}
